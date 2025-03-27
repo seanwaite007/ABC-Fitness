@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ABC Fitness Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: white;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .about-section {
+            text-align: center;
+            padding: 50px 0 20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0 80px;
+        }
+        
+        .stats-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 40px;
+            width: 400px;
+            margin-right: 40px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+        }
+        
+        .about-content {
+            max-width: 400px;
+        }
+        
+        .team-section {
+            text-align: center;
+            padding: 30px 0 80px;
+        }
+        
+        h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 40px;
+            width: 150px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: black;
+            margin: 0 auto 20px;
+        }
+        
+        .member-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .member-title {
+            font-size: 14px;
+        }
+        
+        footer {
+            background-color: white;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-logo {
+            flex: 1;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex: 2;
+            justify-content: space-between;
+        }
+        
+        .footer-links div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links a {
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .copyright {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .legal {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="about-section">
+        <h1>About Us</h1>
+        
+        <div class="stats-container">
+            <div class="stats-box">
+                <div class="stat">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">Years</div>
+                </div>
+                
+                <div class="stat">
+                    <div class="stat-number">1500</div>
+                    <div class="stat-label">Members</div>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="team-section">
+        <h2>Our Team</h2>
+        
+        <div class="team-container">
+            <div class="team-member">
+                <div class="avatar"></div>
+                <div class="member-name">John Doe</div>
+                <div class="member-title">Founder</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="avatar"></div>
+                <div class="member-name">John Doe</div>
+                <div class="member-title">Personal Trainer</div>
+            </div>
+            
+            <div class="team-member">
+                <div class="avatar"></div>
+                <div class="member-name">John Doe</div>
+                <div class="member-title">Dietitian</div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-logo">
+            <div class="logo">LOGO</div>
+            <div class="copyright">© 2015 – 2025</div>
+            <div class="legal">Privacy — Terms</div>
+        </div>
+        <div class="footer-links">
+            <div>
+                <a href="#" style="font-weight: bold;">Product</a>
+                <a href="#">Product</a>
+                <a href="#">Product</a>
+                <a href="#">Product</a>
+            </div>
+            <div>
+                <a href="#" style="font-weight: bold;">Features</a>
+                <a href="#">Feature</a>
+                <a href="#">Feature</a>
+                <a href="#">Feature</a>
+            </div>
+            <div>
+                <a href="#" style="font-weight: bold;">Resources</a>
+                <a href="#">Resource</a>
+                <a href="#">Resource</a>
+                <a href="#">Resource</a>
+            </div>
+            <div>
+                <a href="#" style="font-weight: bold;">Company</a>
+                <a href="#">Company</a>
+                <a href="#">Company</a>
+                <a href="#">Company</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

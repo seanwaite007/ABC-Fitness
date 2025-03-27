@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: white;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .gallery-title {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #f0f0f0;
+        }
+        
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .gallery-item {
+            width: 100%;
+            aspect-ratio: 1/1;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+        
+        footer {
+            background-color: white;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-logo {
+            flex: 1;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex: 2;
+            justify-content: space-between;
+        }
+        
+        .footer-links div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-links a {
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .copyright {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        .legal {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Pricing</a>
+        </nav>
+    </header>
+    
+    <div class="gallery-title">
+        <h1>Gallery</h1>
+    </div>
+    
+    <div class="gallery-container">
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+    </div>
+    
+    <footer>
+        <div class="footer-logo">
+            <div class="logo">LOGO</div>
+            <div class="copyright">© 2015 – 2025</div>
+            <div class="legal">Privacy — Terms</div>
+        </div>
+        <div class="footer-links">
+            <div>
+                <a href="#" style="font-weight: bold;">Product</a>
+                <a href="#">Product</a>
+                <a href="#">Product</a>
+                <a href="#">Product</a>
+            </div>
+            <div>
+                <a href="#" style="font-weight: bold;">Features</a>
+                <a href="#">Feature</a>
+                <a href="#">Feature</a>
+                <a href="#">Feature</a>
+            </div>
+            <div>
+                <a href="#" style="font-weight: bold;">Resources</a>
+                <a href="#">Resource</a>
+                <a href="#">Resource</a>
+                <a href="#">Resource</a>
+            </div>
+            <div>
+                <a href="#" style="font-weight: bold;">Company</a>
+                <a href="#">Company</a>
+                <a href="#">Company</a>
+                <a href="#">Company</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
