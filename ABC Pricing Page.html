@@ -3,219 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparent Pricing</title>
+    <title>Pricing - ABC Fitness Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: white;
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: black;
-        }
-        
-        .pricing-header {
-            text-align: center;
-            padding: 50px 0;
-            font-size: 32px;
-        }
-        
         .pricing-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 20px 50px 100px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
         }
         
         .pricing-card {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 30px;
-            width: 250px;
-            text-align: center;
-        }
-        
-        .icon {
-            width: 60px;
-            height: 60px;
-            background-color: black;
-            border-radius: 50%;
-            margin: 0 auto 15px auto;
-        }
-        
-        .card-title {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        
-        .card-subtitle {
-            color: #333;
-            font-size: 14px;
-            margin-bottom: 40px;
-        }
-        
-        .features {
-            text-align: left;
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 40px;
-        }
-        
-        .feature {
-            margin-bottom: 15px;
-        }
-        
-        .btn {
-            display: block;
-            border: 1px solid #333;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-            border-radius: 3px;
-        }
-        
-        footer {
-            background-color: white;
-            padding: 30px 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .footer-logo {
-            flex: 1;
-        }
-        
-        .footer-links {
-            display: flex;
-            flex: 2;
-            justify-content: space-between;
-        }
-        
-        .footer-links div {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
-        .footer-links a {
-            margin-bottom: 10px;
+        .pricing-card h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .price span {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        
+        .features-list {
+            width: 100%;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .feature-item::before {
+            content: "✓";
+            color: var(--cobalt-blue);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .pricing-card.premium {
+            background-color: var(--cobalt-blue);
+        }
+        
+        .pricing-card.premium h2,
+        .pricing-card.premium .price,
+        .pricing-card.premium .feature-item,
+        .pricing-card.premium .price span {
+            color: white;
+        }
+        
+        .pricing-card.premium .feature-item::before {
+            color: white;
+        }
+        
+        .cta-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
             text-decoration: none;
-            color: #333;
-        }
-        .copyright {
-            margin-top: 10px;
-            font-size: 14px;
+            margin-top: auto;
         }
         
-        .legal {
-            margin-top: 10px;
-            font-size: 14px;
+        .pricing-card .cta-button {
+            background-color: var(--cobalt-blue);
+            color: white;
+        }
+        
+        .pricing-card.premium .cta-button {
+            background-color: white;
+            color: var(--cobalt-blue);
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Gallery</a>
-            <a href="#">Pricing</a>
+            <ul>
+                <li><a href="ABC Home Page.html">Home</a></li>
+                <li><a href="ABC About Page.html">About</a></li>
+                <li><a href="ABC Gallery Page.html">Gallery</a></li>
+                <li><a href="ABC Pricing Page.html">Pricing</a></li>
+            </ul>
         </nav>
     </header>
-    
-    <div class="pricing-header">
-        <h1>Transparent Pricing</h1>
-    </div>
-    
-    <div class="pricing-container">
-        <div class="pricing-card">
-            <div class="icon"></div>
-            <div class="card-title">Title</div>
-            <div class="card-subtitle">Subtitle</div>
-            <div class="features">
-                <div class="feature">Feature 1</div>
-                <div class="feature">Feature 2</div>
-                <div class="feature">Feature 3</div>
+
+    <section class="hero">
+        <h1>Membership Plans</h1>
+        <p>Choose the perfect plan for your fitness journey</p>
+    </section>
+
+    <section class="pricing-container">
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h2>Basic</h2>
+                <div class="price">$49<span>/month</span></div>
+                <div class="features-list">
+                    <div class="feature-item">Access to group classes</div>
+                    <div class="feature-item">Basic equipment usage</div>
+                    <div class="feature-item">Locker room access</div>
+                    <div class="feature-item">2 personal training sessions/month</div>
+                </div>
+                <a href="#" class="cta-button">Start Free Trial</a>
             </div>
-            <a href="#" class="btn">Join Now</a>
-        </div>
-        
-        <div class="pricing-card">
-            <div class="icon"></div>
-            <div class="card-title">Title</div>
-            <div class="card-subtitle">Subtitle</div>
-            <div class="features">
-                <div class="feature">Feature 1</div>
-                <div class="feature">Feature 2</div>
-                <div class="feature">Feature 3</div>
+
+            <div class="pricing-card premium">
+                <h2>Premium</h2>
+                <div class="price">$89<span>/month</span></div>
+                <div class="features-list">
+                    <div class="feature-item">All Basic features</div>
+                    <div class="feature-item">Unlimited group classes</div>
+                    <div class="feature-item">5 personal training sessions/month</div>
+                </div>
+                <a href="#" class="cta-button">Start Free Trial</a>
             </div>
-            <a href="#" class="btn">Join Now</a>
-        </div>
-        
-        <div class="pricing-card">
-            <div class="icon"></div>
-            <div class="card-title">Title</div>
-            <div class="card-subtitle">Subtitle</div>
-            <div class="features">
-                <div class="feature">Feature 1</div>
-                <div class="feature">Feature 2</div>
-                <div class="feature">Feature 3</div>
+
+            <div class="pricing-card">
+                <h2>Elite</h2>
+                <div class="price">$129<span>/month</span></div>
+                <div class="features-list">
+                    <div class="feature-item">All Premium features</div>
+                    <div class="feature-item">Unlimited personal training</div>
+                    <div class="feature-item">Private locker</div>
+                    <div class="feature-item">Guest passes</div>
+                </div>
+                <a href="#" class="cta-button">Start Free Trial</a>
             </div>
-            <a href="#" class="btn">Join Now</a>
         </div>
-    </div>
+    </section>
+
+    <section class="newsletter-section">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form class="newsletter-form">
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="button" class="subscribe-button">Subscribe</button>
+            </div>
+            <div class="validation-message">⚠ Please fill out this field.</div>
+        </form>
+    </section>
     
     <footer>
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
-            <div class="copyright">© 2015 – 2025</div>
+            <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
+            <div class="copyright">© 2025 ABC Fitness Studio</div>
             <div class="legal">Privacy — Terms</div>
         </div>
         <div class="footer-links">
             <div>
-                <a href="#" style="font-weight: bold;">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
+                <a href="#">Classes</a>
+                <a href="#">Yoga</a>
+                <a href="#">Pilates</a>
+                <a href="#">Zumba</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Features</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
+                <a href="#">Schedule</a>
+                <a href="#">Weekday</a>
+                <a href="#">Weekend</a>
+                <a href="#">Book Now</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Resources</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
+                <a href="#">Resources</a>
+                <a href="#">Equipment</a>
+                <a href="#">Wellness Tips</a>
+                <a href="#">FAQ</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
+                <a href="#">Contact</a>
+                <a href="#">Hours</a>
+                <a href="#">Location</a>
+                <a href="#">Inquiries</a>
             </div>
         </div>
     </footer>
-
 </body>
 </html>

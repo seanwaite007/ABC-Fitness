@@ -4,257 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - ABC Fitness Studio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-            background-color: white;
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 20px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        
-        .about-section {
-            text-align: center;
-            padding: 50px 0 20px;
-        }
-        
-        h1 {
-            font-size: 28px;
-            margin-bottom: 40px;
-        }
-        
-        .stats-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px 0 80px;
-        }
-        
-        .stats-box {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 40px;
-            width: 400px;
-            margin-right: 40px;
-        }
-        
-        .stat {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .stat-label {
-            font-size: 16px;
-        }
-        
-        .about-content {
-            max-width: 400px;
-        }
-        
-        .team-section {
-            text-align: center;
-            padding: 30px 0 80px;
-        }
-        
-        h2 {
-            font-size: 28px;
-            margin-bottom: 40px;
-        }
-        
-        .team-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .team-member {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 40px;
-            width: 150px;
-            text-align: center;
-        }
-        
-        .avatar {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background-color: black;
-            margin: 0 auto 20px;
-        }
-        
-        .member-name {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .member-title {
-            font-size: 14px;
-        }
-        
-        footer {
-            background-color: white;
-            padding: 30px 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .footer-logo {
-            flex: 1;
-        }
-        
-        .footer-links {
-            display: flex;
-            flex: 2;
-            justify-content: space-between;
-        }
-        
-        .footer-links div {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .footer-links a {
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        
-        .copyright {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-        
-        .legal {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="ABC Home Page.html">Home</a></li>
+                <li><a href="ABC About Page.html">About</a></li>
+                <li><a href="ABC Gallery Page.html">Gallery</a></li>
+                <li><a href="ABC Pricing Page.html">Pricing</a></li>
             </ul>
         </nav>
     </header>
     
-    <section class="about-section">
-        <h1>About Us</h1>
-        
-        <div class="stats-container">
-            <div class="stats-box">
-                <div class="stat">
-                    <div class="stat-number">10</div>
-                    <div class="stat-label">Years</div>
+    <section class="hero">
+        <h1>About ABC Fitness Studio</h1>
+        <p>Your local fitness haven specializing in yoga, Pilates, and Zumba classes designed to promote a healthy and active lifestyle.</p>
+    </section>
+    
+    <section class="about-content">
+        <div>
+            <h2>Our Story</h2>
+            <p>Founded in 2014, ABC Fitness Studio has grown from a small local gym to a thriving fitness community. We've helped over 1,500 members achieve their fitness goals through our diverse range of classes and expert instruction.</p>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years of Excellence</div>
                 </div>
-                
-                <div class="stat">
-                    <div class="stat-number">1500</div>
-                    <div class="stat-label">Members</div>
+                <div class="stat-box">
+                    <div class="stat-number">1500+</div>
+                    <div class="stat-label">Happy Members</div>
                 </div>
             </div>
-            
-            <div class="about-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <img src="ABC Fitness Studio Gallery Images/Client2_GroupPilates.png" alt="Group Pilates Session">
+    </section>
+    
+    <section class="mission-section">
+        <h2>Our Mission</h2>
+        <p>At ABC Fitness Studio, we strive to embody our values of balance, harmony, and active living in everything we do. We aim to enhance visibility, foster community connections, and provide a supportive environment for all fitness levels.</p>
+        <div class="mission-values">
+            <div class="mission-value">
+                <h3>Balance</h3>
+                <p>Creating harmony between physical and mental well-being</p>
+            </div>
+            <div class="mission-value">
+                <h3>Community</h3>
+                <p>Building a supportive environment for all fitness levels</p>
+            </div>
+            <div class="mission-value">
+                <h3>Excellence</h3>
+                <p>Providing high-quality equipment and expert instruction</p>
             </div>
         </div>
     </section>
     
     <section class="team-section">
         <h2>Our Team</h2>
-        
         <div class="team-container">
             <div class="team-member">
                 <div class="avatar"></div>
-                <div class="member-name">John Doe</div>
-                <div class="member-title">Founder</div>
+                <h3>Sarah Johnson</h3>
+                <p>Founder & Yoga Instructor</p>
+                <p>Certified yoga instructor with 15+ years of experience</p>
             </div>
-            
             <div class="team-member">
                 <div class="avatar"></div>
-                <div class="member-name">John Doe</div>
-                <div class="member-title">Personal Trainer</div>
+                <h3>Michael Chen</h3>
+                <p>Pilates Instructor</p>
+                <p>Expert in core strengthening and rehabilitation</p>
             </div>
-            
             <div class="team-member">
                 <div class="avatar"></div>
-                <div class="member-name">John Doe</div>
-                <div class="member-title">Dietitian</div>
+                <h3>Emma Rodriguez</h3>
+                <p>Zumba Instructor</p>
+                <p>Energetic dance fitness specialist</p>
             </div>
         </div>
     </section>
     
+    <section class="hours-section">
+        <h2>Hours of Operation</h2>
+        <div class="hours-container">
+            <div class="hours-card">
+                <h3>Weekdays</h3>
+                <p>Monday–Friday</p>
+                <p class="time">6 a.m. to 8 p.m.</p>
+            </div>
+            <div class="hours-card">
+                <h3>Saturday</h3>
+                <p>Weekend Hours</p>
+                <p class="time">8 a.m. to 6 p.m.</p>
+            </div>
+            <div class="hours-card">
+                <h3>Sunday</h3>
+                <p>Closed</p>
+                <p class="time">Rest & Recovery</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback/Order Information:</label>
+                <textarea id="feedback" required></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="button" class="clear-form-button">Clear Form</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="newsletter-section">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form class="newsletter-form">
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="button" class="subscribe-button">Subscribe</button>
+            </div>
+            <div class="validation-message">⚠ Please fill out this field.</div>
+        </form>
+    </section>
+    
     <footer>
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
-            <div class="copyright">© 2015 – 2025</div>
+            <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
+            <div class="copyright">© 2025 ABC Fitness Studio</div>
             <div class="legal">Privacy — Terms</div>
         </div>
         <div class="footer-links">
             <div>
-                <a href="#" style="font-weight: bold;">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
+                <a href="#">Classes</a>
+                <a href="#">Yoga</a>
+                <a href="#">Pilates</a>
+                <a href="#">Zumba</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Features</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
+                <a href="#">Schedule</a>
+                <a href="#">Weekday</a>
+                <a href="#">Weekend</a>
+                <a href="#">Book Now</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Resources</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
+                <a href="#">Resources</a>
+                <a href="#">Equipment</a>
+                <a href="#">Wellness Tips</a>
+                <a href="#">FAQ</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
+                <a href="#">Contact</a>
+                <a href="#">Hours</a>
+                <a href="#">Location</a>
+                <a href="#">Inquiries</a>
             </div>
         </div>
     </footer>

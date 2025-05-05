@@ -4,170 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABC Fitness Studio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 50px;
-            background-color: white;
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 20px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-            gap: 40px;
-        }
-        
-        .hero-content {
-            flex: 1;
-        }
-        
-        .hero-image {
-            flex: 1;
-            border: 1px solid #ddd;
-            height: 270px;
-            border-radius: 4px;
-        }
-        
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: #000;
-            color: white;
-            padding: 12px 24px;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-        
-        .features {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-            gap: 40px;
-        }
-        
-        .features-content {
-            flex: 1;
-        }
-        
-        .features-image {
-            flex: 1;
-            border: 1px solid #ddd;
-            height: 200px;
-            border-radius: 4px;
-        }
-        
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        
-        ul.benefits {
-            padding-left: 20px;
-        }
-        
-        ul.benefits li {
-            margin-bottom: 10px;
-        }
-        
-        .testimonials {
-            display: flex;
-            justify-content: space-between;
-            padding: 50px;
-            gap: 30px;
-        }
-        
-        .testimonial {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #000;
-            margin: 20px auto;
-        }
-        
-        footer {
-            background-color: white;
-            padding: 30px 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .footer-logo {
-            flex: 1;
-        }
-        
-        .footer-links {
-            display: flex;
-            flex: 2;
-            justify-content: space-between;
-        }
-        
-        .footer-links div {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .footer-links a {
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        
-        .copyright {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-        
-        .legal {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -180,78 +22,91 @@
     
     <section class="hero">
         <div class="hero-content">
-            <h1>ABC Fitness Studio</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" class="cta-button">Start 1 week free trial</a>
-        </div>
-        <div class="hero-image">
-            <div style="padding: 10px;">
-                <span>○ ○ ○</span>
+            <div>
+                <h1>ABC Fitness Studio</h1>
+                <p>Your local fitness haven specializing in yoga, Pilates, and Zumba classes designed to promote a healthy and active lifestyle.</p>
+                <a href="#" class="cta-button">Start 1 week free trial</a>
             </div>
+            <img src="ABC Fitness Studio Gallery Images/Client2_GroupYoga.png" 
+                 alt="Group Yoga Session">
         </div>
     </section>
+    
     
     <section class="features">
         <div class="features-content">
-            <h2>Our Gym Features</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Our Studio Features</h2>
+            <p>We provide a welcoming space for physical and mental wellness with high-quality fitness and training equipment to support your fitness journey.</p>
             <ul class="benefits">
-                <li>Benefit of Feature</li>
-                <li>Benefit of Feature</li>
-                <li>Benefit of Feature</li>
+                <li>Diverse range of classes including yoga, Pilates, and Zumba</li>
+                <li>Professional instructors dedicated to your well-being</li>
+                <li>Quality equipment to enhance your fitness experience</li>
             </ul>
         </div>
-        <div class="features-image"></div>
+        <img src="ABC Fitness Studio Gallery Images/Client2_IndividualKickboxing.png" 
+             alt="Individual Kickboxing Training">
     </section>
+    
     
     <section class="testimonials">
         <div class="testimonial">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."</p>
+            <p>"The yoga classes at ABC Fitness Studio have transformed my physical and mental well-being. The instructors create a perfect balance of challenge and relaxation."</p>
             <div class="avatar"></div>
-            <p>John Smith</p>
+            <p>Client 1</p>
         </div>
         <div class="testimonial">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."</p>
+            <p>"I've tried many fitness studios, but ABC truly stands out with their supportive community and expert-led Pilates sessions that helped improve my core strength."</p>
             <div class="avatar"></div>
-            <p>John Smith</p>
+            <p>Client 2</p>
         </div>
         <div class="testimonial">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."</p>
+            <p>"The Zumba classes here are energetic and fun! I've made great progress on my fitness journey while enjoying every minute of the experience."</p>
             <div class="avatar"></div>
-            <p>John Smith</p>
+            <p>Client 3</p>
         </div>
+    </section>
+    
+    <section class="newsletter-section">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form class="newsletter-form">
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="button" class="subscribe-button">Subscribe</button>
+            </div>
+            <div class="validation-message">⚠ Please fill out this field.</div>
+        </form>
     </section>
     
     <footer>
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
-            <div class="copyright">© 2015 – 2025</div>
+            <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
+            <div class="copyright">© 2025 ABC Fitness Studio</div>
             <div class="legal">Privacy — Terms</div>
         </div>
         <div class="footer-links">
             <div>
-                <a href="#" style="font-weight: bold;">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
+                <a href="#">Classes</a>
+                <a href="#">Yoga</a>
+                <a href="#">Pilates</a>
+                <a href="#">Zumba</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Features</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
+                <a href="#">Schedule</a>
+                <a href="#">Weekday</a>
+                <a href="#">Weekend</a>
+                <a href="#">Book Now</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Resources</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
+                <a href="#">Resources</a>
+                <a href="#">Equipment</a>
+                <a href="#">Wellness Tips</a>
+                <a href="#">FAQ</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
+                <a href="#">Contact</a>
+                <a href="#">Hours</a>
+                <a href="#">Location</a>
+                <a href="#">Inquiries</a>
             </div>
         </div>
     </footer>

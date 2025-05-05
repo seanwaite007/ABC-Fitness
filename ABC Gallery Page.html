@@ -3,154 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background-color: white;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        
-        nav a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: black;
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        
-        .gallery-title {
-            text-align: center;
-            padding: 30px 0;
-            background-color: #f0f0f0;
-        }
-        
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f0f0f0;
-        }
-        
-        .gallery-item {
-            width: 100%;
-            aspect-ratio: 1/1;
-            border: 1px solid #ccc;
-            background-color: #f0f0f0;
-        }
-        
-        footer {
-            background-color: white;
-            padding: 30px 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .footer-logo {
-            flex: 1;
-        }
-        
-        .footer-links {
-            display: flex;
-            flex: 2;
-            justify-content: space-between;
-        }
-        
-        .footer-links div {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .footer-links a {
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        
-        .copyright {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-        
-        .legal {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-    </style>
+    <title>Gallery - ABC Fitness Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Gallery</a>
-            <a href="#">Pricing</a>
+            <ul>
+                <li><a href="ABC Home Page.html">Home</a></li>
+                <li><a href="ABC About Page.html">About</a></li>
+                <li><a href="ABC Gallery Page.html">Gallery</a></li>
+                <li><a href="ABC Pricing Page.html">Pricing</a></li>
+            </ul>
         </nav>
     </header>
     
-    <div class="gallery-title">
-        <h1>Gallery</h1>
-    </div>
+    <section class="hero">
+        <h1>Our Studio Gallery</h1>
+        <p>Experience the energy and community of ABC Fitness Studio through our gallery</p>
+    </section>
     
-    <div class="gallery-container">
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
-        <div class="gallery-item"></div>
+    <section class="gallery-grid">
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_GroupYoga.png" alt="Group Yoga Class">
+            <div class="gallery-item-content">
+                <h3>Group Yoga Classes</h3>
+                <p>Find your balance and inner peace in our group yoga sessions.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_IndividualYoga.png" alt="Individual Yoga Training">
+            <div class="gallery-item-content">
+                <h3>Individual Training</h3>
+                <p>Get personalized attention and guidance from our expert instructors.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_GroupPilates.png" alt="Group Pilates Class">
+            <div class="gallery-item-content">
+                <h3>Pilates Classes</h3>
+                <p>Build core strength and flexibility in our Pilates sessions.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_GroupKickboxing.png" alt="Group Kickboxing Class">
+            <div class="gallery-item-content">
+                <h3>Group Kickboxing</h3>
+                <p>High-energy kickboxing classes for all fitness levels.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_IndividualPilates.png" alt="Private Pilates Session">
+            <div class="gallery-item-content">
+                <h3>Private Pilates</h3>
+                <p>One-on-one Pilates training for focused improvement.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_IndividualKickboxing.png" alt="Individual Kickboxing">
+            <div class="gallery-item-content">
+                <h3>Personal Kickboxing</h3>
+                <p>Customized kickboxing training for your fitness goals.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_YogaMat.png" alt="Quality Yoga Equipment">
+            <div class="gallery-item-content">
+                <h3>Quality Equipment</h3>
+                <p>Premium yoga mats and equipment for your practice.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_WaterBottle.png" alt="Studio Water Bottle">
+            <div class="gallery-item-content">
+                <h3>Stay Hydrated</h3>
+                <p>Branded water bottles available in our studio shop.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="ABC Fitness Studio Gallery Images/Client2_TeeShirt.png" alt="Studio Merchandise">
+            <div class="gallery-item-content">
+                <h3>Studio Merchandise</h3>
+                <p>Show your ABC Fitness pride with our branded apparel.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cart-actions">
+        <button class="view-cart">View Cart</button>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-modal-actions">
+                <button class="clear-cart">Clear Cart</button>
+                <button class="process-order">Process Order</button>
+            </div>
+        </div>
     </div>
+
+    <section class="newsletter-section">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form class="newsletter-form">
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="button" class="subscribe-button">Subscribe</button>
+            </div>
+            <div class="validation-message">⚠ Please fill out this field.</div>
+        </form>
+    </section>
     
     <footer>
         <div class="footer-logo">
-            <div class="logo">LOGO</div>
-            <div class="copyright">© 2015 – 2025</div>
+            <div class="logo"><img src="abc-fitness-logo.png" alt="ABC Fitness Studio Logo"></div>
+            <div class="copyright">© 2025 ABC Fitness Studio</div>
             <div class="legal">Privacy — Terms</div>
         </div>
         <div class="footer-links">
             <div>
-                <a href="#" style="font-weight: bold;">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
-                <a href="#">Product</a>
+                <a href="#">Classes</a>
+                <a href="#">Yoga</a>
+                <a href="#">Pilates</a>
+                <a href="#">Zumba</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Features</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
-                <a href="#">Feature</a>
+                <a href="#">Schedule</a>
+                <a href="#">Weekday</a>
+                <a href="#">Weekend</a>
+                <a href="#">Book Now</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Resources</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
-                <a href="#">Resource</a>
+                <a href="#">Resources</a>
+                <a href="#">Equipment</a>
+                <a href="#">Wellness Tips</a>
+                <a href="#">FAQ</a>
             </div>
             <div>
-                <a href="#" style="font-weight: bold;">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
-                <a href="#">Company</a>
+                <a href="#">Contact</a>
+                <a href="#">Hours</a>
+                <a href="#">Location</a>
+                <a href="#">Inquiries</a>
             </div>
         </div>
     </footer>
